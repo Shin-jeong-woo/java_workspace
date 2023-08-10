@@ -10,6 +10,10 @@ public class MainTest {
 
 		zealot1.attack(marine1);
 		zealot1.attack(zergling1);
+		marine1.attack(zergling1);
+		while(marine1.hp > 0) {
+			zealot1.attack(marine1);
+		}
 
 		zealot1.showInfo();
 		marine1.showInfo();
